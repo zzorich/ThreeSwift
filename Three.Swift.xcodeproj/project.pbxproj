@@ -24,8 +24,8 @@
 		4FA052412BA6A4910016A3C4 /* Swift3D.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FA0523E2BA6A4910016A3C4 /* Swift3D.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FA052442BA6A4910016A3C4 /* Swift3D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA0523C2BA6A4910016A3C4 /* Swift3D.framework */; };
 		4FA052452BA6A4910016A3C4 /* Swift3D.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA0523C2BA6A4910016A3C4 /* Swift3D.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4FD39F722BB2038A00C5A20D /* BufferGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39F712BB2038A00C5A20D /* BufferGeometry.swift */; };
 		4FD39F742BB2463E00C5A20D /* GeometryElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39F732BB2463E00C5A20D /* GeometryElement.swift */; };
+		4FD39F9A2BB2AF3D00C5A20D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39F992BB2AF3D00C5A20D /* Renderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +70,8 @@
 		4FA0523C2BA6A4910016A3C4 /* Swift3D.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swift3D.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA0523E2BA6A4910016A3C4 /* Swift3D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swift3D.h; sourceTree = "<group>"; };
 		4FA0523F2BA6A4910016A3C4 /* Swift3D.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Swift3D.docc; sourceTree = "<group>"; };
-		4FD39F712BB2038A00C5A20D /* BufferGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferGeometry.swift; sourceTree = "<group>"; };
 		4FD39F732BB2463E00C5A20D /* GeometryElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryElement.swift; sourceTree = "<group>"; };
+		4FD39F992BB2AF3D00C5A20D /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 				4F1758802BA6C828008A34AE /* Clock.swift */,
 				4F1758832BA6CBAF008A34AE /* Node.swift */,
 				4F17588C2BA7EB5C008A34AE /* Geometry.swift */,
-				4FD39F712BB2038A00C5A20D /* BufferGeometry.swift */,
 				4FD39F732BB2463E00C5A20D /* GeometryElement.swift */,
+				4FD39F992BB2AF3D00C5A20D /* Renderer.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -299,8 +299,8 @@
 				4F1758812BA6C828008A34AE /* Clock.swift in Sources */,
 				4F1758872BA6D01A008A34AE /* Euler.swift in Sources */,
 				4F1758892BA7CC74008A34AE /* Utility.swift in Sources */,
-				4FD39F722BB2038A00C5A20D /* BufferGeometry.swift in Sources */,
 				4FD39F742BB2463E00C5A20D /* GeometryElement.swift in Sources */,
+				4FD39F9A2BB2AF3D00C5A20D /* Renderer.swift in Sources */,
 				4F17587F2BA6A7FE008A34AE /* GeometrySource.swift in Sources */,
 				4F17588D2BA7EB5C008A34AE /* Geometry.swift in Sources */,
 				4F8072F62BAC2F6C00389EAE /* PerspectiveCamera.swift in Sources */,

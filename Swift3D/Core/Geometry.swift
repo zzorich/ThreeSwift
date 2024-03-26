@@ -8,5 +8,10 @@
 import Foundation
 
 class Geometry {
-    var sources: [GeometrySource] = []
+    var sources: [GeometrySource]
+    var elements: [GeometryElement]
+    init(sources: [GeometrySource], elements: [GeometryElement]) {
+        self.sources = sources
+        self.elements = elements
+    }
 }
