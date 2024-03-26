@@ -7,6 +7,6 @@
 
 import Foundation
 
-class SCNGeometry {
-    
+class Geometry {
+    var sources: [GeometrySource] = []
 }
