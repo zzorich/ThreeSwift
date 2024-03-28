@@ -11,6 +11,10 @@ import simd
 
 class Node: Identifiable {
     static private var id: UInt64 = .zero
+    var geometry: Geometry
+    init(geometry: Geometry) {
+        self.geometry = geometry
+    }
 
     var parent: Node? = nil
     var name: String? = nil

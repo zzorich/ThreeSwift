@@ -26,6 +26,10 @@
 		4FA052452BA6A4910016A3C4 /* Swift3D.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA0523C2BA6A4910016A3C4 /* Swift3D.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4FD39F742BB2463E00C5A20D /* GeometryElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39F732BB2463E00C5A20D /* GeometryElement.swift */; };
 		4FD39F9A2BB2AF3D00C5A20D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39F992BB2AF3D00C5A20D /* Renderer.swift */; };
+		4FD39FDC2BB4081700C5A20D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FDB2BB4081700C5A20D /* TestViewController.m */; };
+		4FD39FDE2BB4095400C5A20D /* VertexShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FDD2BB4095400C5A20D /* VertexShader.metal */; };
+		4FD39FE12BB4B27E00C5A20D /* MeshBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FE02BB4B27E00C5A20D /* MeshBuffer.swift */; };
+		4FD39FE32BB4F7C600C5A20D /* MeshResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FE22BB4F7C600C5A20D /* MeshResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,12 @@
 		4FA0523F2BA6A4910016A3C4 /* Swift3D.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Swift3D.docc; sourceTree = "<group>"; };
 		4FD39F732BB2463E00C5A20D /* GeometryElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryElement.swift; sourceTree = "<group>"; };
 		4FD39F992BB2AF3D00C5A20D /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		4FD39FD92BB4081600C5A20D /* Three.Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Three.Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		4FD39FDA2BB4081700C5A20D /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		4FD39FDB2BB4081700C5A20D /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		4FD39FDD2BB4095400C5A20D /* VertexShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VertexShader.metal; sourceTree = "<group>"; };
+		4FD39FE02BB4B27E00C5A20D /* MeshBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBuffer.swift; sourceTree = "<group>"; };
+		4FD39FE22BB4F7C600C5A20D /* MeshResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +127,7 @@
 		4F1758852BA6D00C008A34AE /* Math */ = {
 			isa = PBXGroup;
 			children = (
+				4FD39FDD2BB4095400C5A20D /* VertexShader.metal */,
 				4F1758882BA7CC74008A34AE /* Utility.swift */,
 				4F1758862BA6D01A008A34AE /* Euler.swift */,
 				4F17588A2BA7D26F008A34AE /* Matrix4.swift */,
@@ -150,6 +161,9 @@
 				4FA0522D2BA6A4710016A3C4 /* Assets.xcassets */,
 				4FA0522F2BA6A4710016A3C4 /* Preview Content */,
 				4F17587B2BA6A5E4008A34AE /* SIMDTest.swift */,
+				4FD39FDA2BB4081700C5A20D /* TestViewController.h */,
+				4FD39FDB2BB4081700C5A20D /* TestViewController.m */,
+				4FD39FD92BB4081600C5A20D /* Three.Swift-Bridging-Header.h */,
 			);
 			path = Three.Swift;
 			sourceTree = "<group>";
@@ -165,6 +179,7 @@
 		4FA0523D2BA6A4910016A3C4 /* Swift3D */ = {
 			isa = PBXGroup;
 			children = (
+				4FD39FDF2BB411C100C5A20D /* Mesh */,
 				4F1758852BA6D00C008A34AE /* Math */,
 				4F1758822BA6C9FB008A34AE /* Cameras */,
 				4F17587D2BA6A7E7008A34AE /* Core */,
@@ -172,6 +187,15 @@
 				4FA0523F2BA6A4910016A3C4 /* Swift3D.docc */,
 			);
 			path = Swift3D;
+			sourceTree = "<group>";
+		};
+		4FD39FDF2BB411C100C5A20D /* Mesh */ = {
+			isa = PBXGroup;
+			children = (
+				4FD39FE02BB4B27E00C5A20D /* MeshBuffer.swift */,
+				4FD39FE22BB4F7C600C5A20D /* MeshResource.swift */,
+			);
+			path = Mesh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,9 +261,11 @@
 				TargetAttributes = {
 					4FA052252BA6A4700016A3C4 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 					4FA0523B2BA6A4910016A3C4 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -288,6 +314,7 @@
 			files = (
 				4F17587C2BA6A5E4008A34AE /* SIMDTest.swift in Sources */,
 				4FA0522C2BA6A4700016A3C4 /* ContentView.swift in Sources */,
+				4FD39FDC2BB4081700C5A20D /* TestViewController.m in Sources */,
 				4FA0522A2BA6A4700016A3C4 /* Three_SwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD39FE12BB4B27E00C5A20D /* MeshBuffer.swift in Sources */,
 				4F1758812BA6C828008A34AE /* Clock.swift in Sources */,
 				4F1758872BA6D01A008A34AE /* Euler.swift in Sources */,
 				4F1758892BA7CC74008A34AE /* Utility.swift in Sources */,
@@ -304,8 +332,10 @@
 				4F17587F2BA6A7FE008A34AE /* GeometrySource.swift in Sources */,
 				4F17588D2BA7EB5C008A34AE /* Geometry.swift in Sources */,
 				4F8072F62BAC2F6C00389EAE /* PerspectiveCamera.swift in Sources */,
+				4FD39FDE2BB4095400C5A20D /* VertexShader.metal in Sources */,
 				4FA052402BA6A4910016A3C4 /* Swift3D.docc in Sources */,
 				4F1758842BA6CBAF008A34AE /* Node.swift in Sources */,
+				4FD39FE32BB4F7C600C5A20D /* MeshResource.swift in Sources */,
 				4F17588B2BA7D26F008A34AE /* Matrix4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +386,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -419,6 +450,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -446,6 +478,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Three.Swift/Preview Content\"";
@@ -465,6 +498,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lingji.Three-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Three.Swift/Three.Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -476,6 +511,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Three.Swift/Preview Content\"";
@@ -495,6 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lingji.Three-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Three.Swift/Three.Swift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -503,7 +540,9 @@
 		4FA052472BA6A4910016A3C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLY_RULES_IN_COPY_HEADERS = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -529,6 +568,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -539,7 +579,9 @@
 		4FA052482BA6A4910016A3C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLY_RULES_IN_COPY_HEADERS = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

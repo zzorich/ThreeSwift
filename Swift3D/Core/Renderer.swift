@@ -9,8 +9,10 @@ import Foundation
 import Metal
 import MetalKit
 
-class Renderer: MTKViewDelegate {
-    private let drawableRenderPipieline: MTLRenderPipelineState
+enum VertexInputIndex: Int {
+    case position=0, normal, textCoord
+}
+class Renderer: NSObject, MTKViewDelegate {
     private var aspectRatio: Float
     private let device: MTLDevice
     private let commandQueue: MTLCommandQueue
@@ -28,6 +30,7 @@ class Renderer: MTKViewDelegate {
         pipelineDescriptor.rasterSampleCount = mtkView.sampleCount
         pipelineDescriptor.colorAttachments[0].pixelFormat = mtkView.colorPixelFormat
         aspectRatio = 1.0
+        super.init()
     }
 
 
@@ -40,7 +43,11 @@ class Renderer: MTKViewDelegate {
     }
 
 
-    func draw(node: Node) {
-        
+    func draw(node: Node, renderEncoder: MTLRenderCommandEncoder) {
+        for (source, element) in zip(node.geometry.sources, node.geometry.elements) {
+            if source.semantic == .position {
+            }
+
+        }
     }
 }

@@ -22,15 +22,15 @@ class GeometrySource {
         self.usesFloatComponents = usesFloatComponents
     }
     enum Semantic {
-
+        case position, normal, textCoord
     }
 
-    private(set) var data: Data
-    private let semantic: Semantic
-    private let vectorCount: Int
-    private let usesFloatComponents: Bool
-    private let componentsPerVector: Int
-    private let bytesPerComponent: Int
-    private let dataOffset: Int
-    private let dataStride: Int
+    let data: Data
+    let semantic: Semantic
+    let vectorCount: Int
+    let usesFloatComponents: Bool
+    let componentsPerVector: Int
+    let bytesPerComponent: Int
+    let dataOffset: Int
+    let dataStride: Int
 }
