@@ -9,19 +9,21 @@ import Foundation
 import simd
 
 
-class Node: Identifiable {
+private var id: UInt32 = 0
+class RKEntity: Identifiable {
     static private var id: UInt64 = .zero
-    var geometry: Geometry
-    init(geometry: Geometry) {
-        self.geometry = geometry
+    var mesh: RKMeshResource
+    init(mesh: RKMeshResource) {
+        self.mesh = mesh
     }
 
-    var parent: Node? = nil
+    var parent: RKEntity? = nil
     var name: String? = nil
-    var children: [Node] = []
+    var children: [RKEntity] = []
     let id = {
-        Node.id += 1
-        return Node.id - 1
+        let currentId = id
+        id += 1
+        return currentId
     }()
 
     var simdTransform: simd_float4x4 = .identity

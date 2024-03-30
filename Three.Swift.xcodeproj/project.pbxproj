@@ -14,7 +14,6 @@
 		4F1758872BA6D01A008A34AE /* Euler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1758862BA6D01A008A34AE /* Euler.swift */; };
 		4F1758892BA7CC74008A34AE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1758882BA7CC74008A34AE /* Utility.swift */; };
 		4F17588B2BA7D26F008A34AE /* Matrix4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17588A2BA7D26F008A34AE /* Matrix4.swift */; };
-		4F17588D2BA7EB5C008A34AE /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17588C2BA7EB5C008A34AE /* Geometry.swift */; };
 		4F8072F62BAC2F6C00389EAE /* PerspectiveCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8072F52BAC2F6C00389EAE /* PerspectiveCamera.swift */; };
 		4FA0522A2BA6A4700016A3C4 /* Three_SwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA052292BA6A4700016A3C4 /* Three_SwiftApp.swift */; };
 		4FA0522C2BA6A4700016A3C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0522B2BA6A4700016A3C4 /* ContentView.swift */; };
@@ -65,7 +64,6 @@
 		4F1758862BA6D01A008A34AE /* Euler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Euler.swift; sourceTree = "<group>"; };
 		4F1758882BA7CC74008A34AE /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		4F17588A2BA7D26F008A34AE /* Matrix4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix4.swift; sourceTree = "<group>"; };
-		4F17588C2BA7EB5C008A34AE /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		4F8072F52BAC2F6C00389EAE /* PerspectiveCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerspectiveCamera.swift; sourceTree = "<group>"; };
 		4FA052262BA6A4700016A3C4 /* Three.Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Three.Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA052292BA6A4700016A3C4 /* Three_SwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Three_SwiftApp.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				4F17587E2BA6A7FE008A34AE /* GeometrySource.swift */,
 				4F1758802BA6C828008A34AE /* Clock.swift */,
 				4F1758832BA6CBAF008A34AE /* Node.swift */,
-				4F17588C2BA7EB5C008A34AE /* Geometry.swift */,
 				4FD39F732BB2463E00C5A20D /* GeometryElement.swift */,
 				4FD39F992BB2AF3D00C5A20D /* Renderer.swift */,
 			);
@@ -334,7 +331,6 @@
 				4FD39F9A2BB2AF3D00C5A20D /* Renderer.swift in Sources */,
 				4FD39FE52BB7B45F00C5A20D /* RKMaterial.swift in Sources */,
 				4F17587F2BA6A7FE008A34AE /* GeometrySource.swift in Sources */,
-				4F17588D2BA7EB5C008A34AE /* Geometry.swift in Sources */,
 				4F8072F62BAC2F6C00389EAE /* PerspectiveCamera.swift in Sources */,
 				4FD39FDE2BB4095400C5A20D /* VertexShader.metal in Sources */,
 				4FA052402BA6A4910016A3C4 /* Swift3D.docc in Sources */,

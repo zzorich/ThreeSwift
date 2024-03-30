@@ -8,4 +8,5 @@
 #include <metal_stdlib>
 using namespace metal;
 
+struct Vertex
 
