@@ -30,6 +30,7 @@
 		4FD39FDE2BB4095400C5A20D /* VertexShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FDD2BB4095400C5A20D /* VertexShader.metal */; };
 		4FD39FE12BB4B27E00C5A20D /* MeshBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FE02BB4B27E00C5A20D /* MeshBuffer.swift */; };
 		4FD39FE32BB4F7C600C5A20D /* MeshResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FE22BB4F7C600C5A20D /* MeshResource.swift */; };
+		4FD39FE52BB7B45F00C5A20D /* RKMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FE42BB7B45F00C5A20D /* RKMaterial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		4FD39FDD2BB4095400C5A20D /* VertexShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VertexShader.metal; sourceTree = "<group>"; };
 		4FD39FE02BB4B27E00C5A20D /* MeshBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBuffer.swift; sourceTree = "<group>"; };
 		4FD39FE22BB4F7C600C5A20D /* MeshResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshResource.swift; sourceTree = "<group>"; };
+		4FD39FE42BB7B45F00C5A20D /* RKMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKMaterial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			children = (
 				4FD39FE02BB4B27E00C5A20D /* MeshBuffer.swift */,
 				4FD39FE22BB4F7C600C5A20D /* MeshResource.swift */,
+				4FD39FE42BB7B45F00C5A20D /* RKMaterial.swift */,
 			);
 			path = Mesh;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				4F1758892BA7CC74008A34AE /* Utility.swift in Sources */,
 				4FD39F742BB2463E00C5A20D /* GeometryElement.swift in Sources */,
 				4FD39F9A2BB2AF3D00C5A20D /* Renderer.swift in Sources */,
+				4FD39FE52BB7B45F00C5A20D /* RKMaterial.swift in Sources */,
 				4F17587F2BA6A7FE008A34AE /* GeometrySource.swift in Sources */,
 				4F17588D2BA7EB5C008A34AE /* Geometry.swift in Sources */,
 				4F8072F62BAC2F6C00389EAE /* PerspectiveCamera.swift in Sources */,
@@ -554,7 +558,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,7 +597,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
