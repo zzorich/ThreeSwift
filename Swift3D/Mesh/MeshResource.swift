@@ -7,13 +7,11 @@
 
 import Foundation
 
-@MainActor
+// naive implementation, for later modification
 class RKMeshResource {
-    init(
-        mesh: RKMeshResource,
-        materials: [any RKMaterial]
-    ) {
-        
+    private var descriptors: [RKMeshDescriptor]
+    init(_ descriptors: [RKMeshDescriptor]) {
+        self.descriptors = descriptors
     }
 }
 

@@ -30,6 +30,7 @@
 		4FD39FE12BB4B27E00C5A20D /* MeshBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FE02BB4B27E00C5A20D /* MeshBuffer.swift */; };
 		4FD39FE32BB4F7C600C5A20D /* MeshResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FE22BB4F7C600C5A20D /* MeshResource.swift */; };
 		4FD39FE52BB7B45F00C5A20D /* RKMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FE42BB7B45F00C5A20D /* RKMaterial.swift */; };
+		4FD3A0152BBA206700C5A20D /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A0142BBA206700C5A20D /* Texture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		4FD39FE02BB4B27E00C5A20D /* MeshBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshBuffer.swift; sourceTree = "<group>"; };
 		4FD39FE22BB4F7C600C5A20D /* MeshResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshResource.swift; sourceTree = "<group>"; };
 		4FD39FE42BB7B45F00C5A20D /* RKMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKMaterial.swift; sourceTree = "<group>"; };
+		4FD3A0142BBA206700C5A20D /* Texture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				4FD39FE02BB4B27E00C5A20D /* MeshBuffer.swift */,
 				4FD39FE22BB4F7C600C5A20D /* MeshResource.swift */,
 				4FD39FE42BB7B45F00C5A20D /* RKMaterial.swift */,
+				4FD3A0142BBA206700C5A20D /* Texture.swift */,
 			);
 			path = Mesh;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD39FE12BB4B27E00C5A20D /* MeshBuffer.swift in Sources */,
+				4FD3A0152BBA206700C5A20D /* Texture.swift in Sources */,
 				4F1758812BA6C828008A34AE /* Clock.swift in Sources */,
 				4F1758872BA6D01A008A34AE /* Euler.swift in Sources */,
 				4F1758892BA7CC74008A34AE /* Utility.swift in Sources */,
