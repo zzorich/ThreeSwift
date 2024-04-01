@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F17587C2BA6A5E4008A34AE /* SIMDTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17587B2BA6A5E4008A34AE /* SIMDTest.swift */; };
-		4F17587F2BA6A7FE008A34AE /* GeometrySource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17587E2BA6A7FE008A34AE /* GeometrySource.swift */; };
 		4F1758812BA6C828008A34AE /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1758802BA6C828008A34AE /* Clock.swift */; };
-		4F1758842BA6CBAF008A34AE /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1758832BA6CBAF008A34AE /* Node.swift */; };
+		4F1758842BA6CBAF008A34AE /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1758832BA6CBAF008A34AE /* Entity.swift */; };
 		4F1758872BA6D01A008A34AE /* Euler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1758862BA6D01A008A34AE /* Euler.swift */; };
 		4F1758892BA7CC74008A34AE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1758882BA7CC74008A34AE /* Utility.swift */; };
 		4F17588B2BA7D26F008A34AE /* Matrix4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F17588A2BA7D26F008A34AE /* Matrix4.swift */; };
@@ -23,7 +22,6 @@
 		4FA052412BA6A4910016A3C4 /* Swift3D.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FA0523E2BA6A4910016A3C4 /* Swift3D.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FA052442BA6A4910016A3C4 /* Swift3D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA0523C2BA6A4910016A3C4 /* Swift3D.framework */; };
 		4FA052452BA6A4910016A3C4 /* Swift3D.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA0523C2BA6A4910016A3C4 /* Swift3D.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4FD39F742BB2463E00C5A20D /* GeometryElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39F732BB2463E00C5A20D /* GeometryElement.swift */; };
 		4FD39F9A2BB2AF3D00C5A20D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39F992BB2AF3D00C5A20D /* Renderer.swift */; };
 		4FD39FDC2BB4081700C5A20D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FDB2BB4081700C5A20D /* TestViewController.m */; };
 		4FD39FDE2BB4095400C5A20D /* VertexShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4FD39FDD2BB4095400C5A20D /* VertexShader.metal */; };
@@ -59,9 +57,8 @@
 
 /* Begin PBXFileReference section */
 		4F17587B2BA6A5E4008A34AE /* SIMDTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIMDTest.swift; sourceTree = "<group>"; };
-		4F17587E2BA6A7FE008A34AE /* GeometrySource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometrySource.swift; sourceTree = "<group>"; };
 		4F1758802BA6C828008A34AE /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
-		4F1758832BA6CBAF008A34AE /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		4F1758832BA6CBAF008A34AE /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		4F1758862BA6D01A008A34AE /* Euler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Euler.swift; sourceTree = "<group>"; };
 		4F1758882BA7CC74008A34AE /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		4F17588A2BA7D26F008A34AE /* Matrix4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix4.swift; sourceTree = "<group>"; };
@@ -74,7 +71,6 @@
 		4FA0523C2BA6A4910016A3C4 /* Swift3D.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swift3D.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA0523E2BA6A4910016A3C4 /* Swift3D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swift3D.h; sourceTree = "<group>"; };
 		4FA0523F2BA6A4910016A3C4 /* Swift3D.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Swift3D.docc; sourceTree = "<group>"; };
-		4FD39F732BB2463E00C5A20D /* GeometryElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryElement.swift; sourceTree = "<group>"; };
 		4FD39F992BB2AF3D00C5A20D /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		4FD39FD92BB4081600C5A20D /* Three.Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Three.Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		4FD39FDA2BB4081700C5A20D /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -108,10 +104,8 @@
 		4F17587D2BA6A7E7008A34AE /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4F17587E2BA6A7FE008A34AE /* GeometrySource.swift */,
 				4F1758802BA6C828008A34AE /* Clock.swift */,
-				4F1758832BA6CBAF008A34AE /* Node.swift */,
-				4FD39F732BB2463E00C5A20D /* GeometryElement.swift */,
+				4F1758832BA6CBAF008A34AE /* Entity.swift */,
 				4FD39F992BB2AF3D00C5A20D /* Renderer.swift */,
 			);
 			path = Core;
@@ -331,14 +325,12 @@
 				4F1758812BA6C828008A34AE /* Clock.swift in Sources */,
 				4F1758872BA6D01A008A34AE /* Euler.swift in Sources */,
 				4F1758892BA7CC74008A34AE /* Utility.swift in Sources */,
-				4FD39F742BB2463E00C5A20D /* GeometryElement.swift in Sources */,
 				4FD39F9A2BB2AF3D00C5A20D /* Renderer.swift in Sources */,
 				4FD39FE52BB7B45F00C5A20D /* RKMaterial.swift in Sources */,
-				4F17587F2BA6A7FE008A34AE /* GeometrySource.swift in Sources */,
 				4F8072F62BAC2F6C00389EAE /* PerspectiveCamera.swift in Sources */,
 				4FD39FDE2BB4095400C5A20D /* VertexShader.metal in Sources */,
 				4FA052402BA6A4910016A3C4 /* Swift3D.docc in Sources */,
-				4F1758842BA6CBAF008A34AE /* Node.swift in Sources */,
+				4F1758842BA6CBAF008A34AE /* Entity.swift in Sources */,
 				4FD39FE32BB4F7C600C5A20D /* MeshResource.swift in Sources */,
 				4F17588B2BA7D26F008A34AE /* Matrix4.swift in Sources */,
 			);

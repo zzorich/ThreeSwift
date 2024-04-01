@@ -43,11 +43,7 @@ class Renderer: NSObject, MTKViewDelegate {
     }
 
 
-    func draw(node: Node, renderEncoder: MTLRenderCommandEncoder) {
-        for (source, element) in zip(node.geometry.sources, node.geometry.elements) {
-            if source.semantic == .position {
-            }
-
-        }
+    func draw(node: RKEntity, renderEncoder: MTLRenderCommandEncoder) {
+        
     }
 }

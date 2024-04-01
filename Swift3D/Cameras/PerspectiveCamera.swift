@@ -30,6 +30,7 @@ class PerspectiveCamera {
         var viewMatrix: simd_float4x4 = .identity
         var projectionMatrix: simd_float4x4 = .identity
     }
+    
     var viewMatrix: simd_float4x4 {
         updateUniformsIfNeeded()
         return uniforms.viewMatrix
